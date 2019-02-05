@@ -9,7 +9,7 @@ class Song < ActiveRecord::Base
 
   private
 
-  def post_params
+  def song_params
     params.require(:Song).permit(:category_id, :content)
   end
 
