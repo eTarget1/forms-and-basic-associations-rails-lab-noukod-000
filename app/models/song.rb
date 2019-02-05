@@ -6,12 +6,11 @@ class Song < ActiveRecord::Base
   def create
     Song.create(Song_params)
   end
- 
+
   private
- 
+
   def post_params
     params.require(:Song).permit(:category_id, :content)
   end
-  
-end
 
+end
